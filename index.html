@@ -18,6 +18,7 @@
     }
 
     body {
+      margin: 20px;
       background: #2D0F64;
       background: linear-gradient(90deg,rgba(45, 15, 100, 1) 0%, rgba(32, 32, 32, 1) 100%);
       display: flex;
@@ -100,7 +101,7 @@
 
     /* Smartphones: make it take up 80% of the width */
     @media (max-width: 600px) {
-      img.responsive-img {
+      #img-logo {
         width: 80%;
       }
       .text-div {
@@ -111,7 +112,7 @@
 </style>
 </head>
 <body>
-  <img src="C:\Users\kotec\Pictures\MIXED FEELINGS\Logo\MF_logo_download_gate.png"
+  <img src=".\images\MF_logo_download_gate.png"
        alt="MIXED FEELINGS"
        id="img-logo"/>
       
@@ -147,7 +148,7 @@
         clickedOnce = true;
       } else {
         // Second click → redirect to another page
-        window.open('https://www.yourwebsite.com', '_blank');
+        window.open('https://www.google.com', '_blank');
       }
     });
   </script>
