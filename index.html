@@ -18,7 +18,7 @@
     }
 
     body {
-      margin: 20px;
+      margin: 10px;
       background: #2D0F64;
       background: linear-gradient(90deg,rgba(45, 15, 100, 1) 0%, rgba(32, 32, 32, 1) 100%);
       display: flex;
@@ -66,8 +66,17 @@
     }
 
     #img-logo {
-      width: 30%;
+      width: 25%;
       height: auto;
+    }
+    
+    #img-cover {
+      width: 15%;
+      height: auto;
+      border: solid;
+      border-color: #dad0fa;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     }
     
     .text-div {
@@ -92,9 +101,15 @@
     /* Tablets: make the image take up 50% of the width */
     @media (max-width: 1024px) {
       #img-logo {
-        width: 50%;
+        width: 40%;
+      }
+      #img-cover {
+        width: 20%;
       }
       .text-div {
+        max-width: 50%
+      }
+      .info-div {
         max-width: 50%
       }
     }
@@ -102,9 +117,15 @@
     /* Smartphones: make it take up 80% of the width */
     @media (max-width: 600px) {
       #img-logo {
-        width: 80%;
+        width: 70%;
+      }
+      #img-cover {
+        width: 40%;
       }
       .text-div {
+        max-width: 80%
+      }
+      .info-div {
         max-width: 80%
       }
     }
@@ -116,6 +137,10 @@
        alt="MIXED FEELINGS"
        id="img-logo"/>
       
+  <img src=".\images\passionate_highs_cover.png"
+       alt="Passionate Highs"
+       id="img-cover"
+  
   <h1>Hey there!</h1>
   <div class="text-div">
     MIXED FEELINGS here :)
@@ -126,7 +151,7 @@
     that I’d be super happy if you could
     visit and follow my Instagram page.
 
-    This would help me grow as an artist!
+    This would help me alot to grow as an artist!
     <br><br>
     Thanks alot <3
   </div>
@@ -134,7 +159,7 @@
   <div class="info-div">
     *once you’ve clicked this button it gets replaced by 
     another button that directs you to the download gate.  </div>
-  <footer>© 2025 MIXED FEELINGS</footer>
+  <!-- <footer>© 2025 MIXED FEELINGS</footer> -->
 
   <script>
     const button = document.getElementById('redirectBtn');
